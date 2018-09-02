@@ -1,0 +1,70 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "f8d336f5085647761334e0f139e85392",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/default.rb",
+      "path": "attributes/default.rb",
+      "checksum": "45ba3dc5838328f6df3d917d251261f3",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/default.rb",
+      "path": "recipes/default.rb",
+      "checksum": "43d2ebfb4493ceb80cecaebd423f3bb1",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/metadata.rb",
+      "path": "metadata.rb",
+      "checksum": "00cef3ce36903ea678856f28b78f4471",
+      "specificity": "default"
+    }
+  ],
+  "metadata": {
+    "name": "example",
+    "description": "An example cookbook",
+    "long_description": "",
+    "maintainer": "Example maintainer",
+    "maintainer_email": "maintainer@example.com",
+    "license": "Apache-2.0",
+    "platforms": {
+
+    },
+    "dependencies": {
+
+    },
+    "providing": {
+      "example": ">= 0.0.0"
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+      "example": ""
+    },
+    "version": "1.0.0",
+    "source_url": "",
+    "issues_url": "",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "1.0.0",
+  "name": "example-1.0.0",
+  "cookbook_name": "example",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}
