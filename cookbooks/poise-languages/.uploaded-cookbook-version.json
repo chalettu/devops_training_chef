@@ -1,0 +1,185 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/metadata.json",
+      "path": "metadata.json",
+      "checksum": "e8b78349b01b450c87ce71adc698c4bb",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/default.rb",
+      "path": "libraries/default.rb",
+      "checksum": "45e73b4b5553b148a01fd0571fbbe008",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "568508c2c23872312a20fee6c35c282f",
+      "specificity": "default"
+    },
+    {
+      "name": "files/mixin.rb",
+      "path": "files/halite_gem/poise_languages/command/mixin.rb",
+      "checksum": "79144ac686fc31f2022561371fc90d54",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/command.rb",
+      "path": "files/halite_gem/poise_languages/command.rb",
+      "checksum": "9ca5f1ca16f953fa3d269d4cb9ad5d53",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/error.rb",
+      "path": "files/halite_gem/poise_languages/error.rb",
+      "checksum": "15a86512c39af46c1c0825af070e4775",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/mixin.rb",
+      "path": "files/halite_gem/poise_languages/scl/mixin.rb",
+      "checksum": "426f202e6d352657008c13a8438e448f",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/resource.rb",
+      "path": "files/halite_gem/poise_languages/scl/resource.rb",
+      "checksum": "58a0dbe2ed1fe5a1e7ac53819f950420",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/scl.rb",
+      "path": "files/halite_gem/poise_languages/scl.rb",
+      "checksum": "e3530662f2d92205fca3db9b7f7e761b",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/mixin.rb",
+      "path": "files/halite_gem/poise_languages/static/mixin.rb",
+      "checksum": "219285e848d5b4dd62bccf429e6f984f",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/resource.rb",
+      "path": "files/halite_gem/poise_languages/static/resource.rb",
+      "checksum": "a4e4e041bfb4a639347df1cadab68528",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/static.rb",
+      "path": "files/halite_gem/poise_languages/static.rb",
+      "checksum": "c17bcbdd7ca184504cdc97e25d622f2c",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/mixin.rb",
+      "path": "files/halite_gem/poise_languages/system/mixin.rb",
+      "checksum": "cbf4b90337b42a92ded69d27a33cda00",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/resource.rb",
+      "path": "files/halite_gem/poise_languages/system/resource.rb",
+      "checksum": "fe28bce7f15b2471adc31a4ee73bede9",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/system.rb",
+      "path": "files/halite_gem/poise_languages/system.rb",
+      "checksum": "2210cd217598f478f6ae4cae17d2ada4",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/which.rb",
+      "path": "files/halite_gem/poise_languages/utils/which.rb",
+      "checksum": "cb0779b62e6c1712aafedc772a715ae7",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/utils.rb",
+      "path": "files/halite_gem/poise_languages/utils.rb",
+      "checksum": "ac263572b6661a4c941402731f2013f1",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/version.rb",
+      "path": "files/halite_gem/poise_languages/version.rb",
+      "checksum": "5af8ee623c22748fe3173f8153f4425d",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/poise_languages.rb",
+      "path": "files/halite_gem/poise_languages.rb",
+      "checksum": "150cea16b25e243404776fb135213242",
+      "specificity": "halite_gem"
+    }
+  ],
+  "metadata": {
+    "name": "poise-languages",
+    "description": "A Chef cookbook to help writing language cookbooks.",
+    "long_description": "# Poise-Languages Cookbook\n\n[![Build Status](https://img.shields.io/travis/poise/poise-languages.svg)](https://travis-ci.org/poise/poise-languages)\n[![Gem Version](https://img.shields.io/gem/v/poise-languages.svg)](https://rubygems.org/gems/poise-languages)\n[![Cookbook Version](https://img.shields.io/cookbook/v/poise-languages.svg)](https://supermarket.chef.io/cookbooks/poise-languages)\n[![Coverage](https://img.shields.io/codecov/c/github/poise/poise-languages.svg)](https://codecov.io/github/poise/poise-languages)\n[![Gemnasium](https://img.shields.io/gemnasium/poise/poise-languages.svg)](https://gemnasium.com/poise/poise-languages)\n[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)\n\nShared support code for Poise's language cookbooks like poise-ruby and\npoise-python.\n\n## License\n\nCopyright 2015-2017, Noah Kantrowitz\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+    "maintainer": "Noah Kantrowitz",
+    "maintainer_email": "noah@coderanger.net",
+    "license": "Apache-2.0",
+    "platforms": {
+      "aix": ">= 0.0.0",
+      "amazon": ">= 0.0.0",
+      "arch": ">= 0.0.0",
+      "centos": ">= 0.0.0",
+      "chefspec": ">= 0.0.0",
+      "debian": ">= 0.0.0",
+      "dragonfly4": ">= 0.0.0",
+      "fedora": ">= 0.0.0",
+      "freebsd": ">= 0.0.0",
+      "gentoo": ">= 0.0.0",
+      "ios_xr": ">= 0.0.0",
+      "mac_os_x": ">= 0.0.0",
+      "nexus": ">= 0.0.0",
+      "omnios": ">= 0.0.0",
+      "openbsd": ">= 0.0.0",
+      "opensuse": ">= 0.0.0",
+      "oracle": ">= 0.0.0",
+      "raspbian": ">= 0.0.0",
+      "redhat": ">= 0.0.0",
+      "slackware": ">= 0.0.0",
+      "smartos": ">= 0.0.0",
+      "solaris2": ">= 0.0.0",
+      "suse": ">= 0.0.0",
+      "ubuntu": ">= 0.0.0",
+      "windows": ">= 0.0.0"
+    },
+    "dependencies": {
+      "poise": "~> 2.5",
+      "poise-archive": "~> 1.0"
+    },
+    "providing": {
+
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+
+    },
+    "version": "2.1.2",
+    "source_url": "https://github.com/poise/poise-languages",
+    "issues_url": "https://github.com/poise/poise-languages/issues",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "2.1.2",
+  "name": "poise-languages-2.1.2",
+  "cookbook_name": "poise-languages",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}

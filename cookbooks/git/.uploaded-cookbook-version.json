@@ -1,0 +1,189 @@
+{
+  "all_files": [
+    {
+      "name": "resources/config.rb",
+      "path": "resources/config.rb",
+      "checksum": "5b562a66d75b55ea06338fba3739fbd3",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/metadata.json",
+      "path": "metadata.json",
+      "checksum": "e1b2154585b95af91f49c06636fe11a9",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/helpers.rb",
+      "path": "libraries/helpers.rb",
+      "checksum": "06f65a7a1540bf7b307a40f7beb9d98f",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_client.rb",
+      "path": "libraries/provider_git_client.rb",
+      "checksum": "c79d97b4a8be64f099d5918679d00f99",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_client_osx.rb",
+      "path": "libraries/provider_git_client_osx.rb",
+      "checksum": "4cd2fac891845859ce6ea636a4d22afd",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_client_package.rb",
+      "path": "libraries/provider_git_client_package.rb",
+      "checksum": "8638ef236ec061feff2fb9ef36a11adf",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_client_source.rb",
+      "path": "libraries/provider_git_client_source.rb",
+      "checksum": "dbb885cb6c1d46ebc59716f6102f162e",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_client_windows.rb",
+      "path": "libraries/provider_git_client_windows.rb",
+      "checksum": "92c6b1220d8fb19ebd183e162bdd8caf",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/provider_git_service.rb",
+      "path": "libraries/provider_git_service.rb",
+      "checksum": "3e3e30cae584b746e099a1d0a16b4c42",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/resource_git_client.rb",
+      "path": "libraries/resource_git_client.rb",
+      "checksum": "e54d45c93b8b1ac9a68ab2144c946f8d",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/resource_git_service.rb",
+      "path": "libraries/resource_git_service.rb",
+      "checksum": "0a0d37f015af4882ef0000b6bed9b7a6",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "65765bd03f6979407d3ae71ba71d3fdb",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/default.rb",
+      "path": "attributes/default.rb",
+      "checksum": "3be5f74e46066d938b2c7e9c778991a4",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/default.rb",
+      "path": "recipes/default.rb",
+      "checksum": "83f7252cae5d463a971977a580e1bddb",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/package.rb",
+      "path": "recipes/package.rb",
+      "checksum": "e77be42d1bb2097c68810e7b1f91bf64",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/server.rb",
+      "path": "recipes/server.rb",
+      "checksum": "f3291947b0b0ff0c998e8b7d016c6a0b",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/source.rb",
+      "path": "recipes/source.rb",
+      "checksum": "8cafee5092d27a2f2a9a724c9e2a6dc3",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/windows.rb",
+      "path": "recipes/windows.rb",
+      "checksum": "5443e28f8b303fc3a724f1447c61bc0e",
+      "specificity": "default"
+    },
+    {
+      "name": "templates/.DS_Store",
+      "path": "templates/.DS_Store",
+      "checksum": "194577a7e20bdcc7afbb718f502c134c",
+      "specificity": "root_default"
+    },
+    {
+      "name": "templates/git-xinetd.d.erb",
+      "path": "templates/git-xinetd.d.erb",
+      "checksum": "d64bfc8f0c3d6aba1b9ff5f8049c1338",
+      "specificity": "root_default"
+    }
+  ],
+  "metadata": {
+    "name": "git",
+    "description": "Installs git and/or sets up a Git server daemon",
+    "long_description": "# Git Cookbook\n\n[![Build Status](https://travis-ci.org/chef-cookbooks/git.svg?branch=master)](https://travis-ci.org/chef-cookbooks/git) [![Cookbook Version](https://img.shields.io/cookbook/v/git.svg)](https://supermarket.chef.io/cookbooks/git)\n\nInstalls git_client from package or source. Optionally sets up a git service under xinetd.\n\n## Scope\n\nThis cookbook is concerned with the Git SCM utility. It does not address ecosystem tooling or related projects.\n\n## Requirements\n\n### Platforms\n\nThe following platforms have been tested with Test Kitchen:\n\n```\n|---------------+-------|\n| centos-6      | X     |\n|---------------+-------|\n| centos-7      | X     |\n|---------------+-------|\n| fedora        | X     |\n|---------------+-------|\n| debian-8      | X     |\n|---------------+-------|\n| debian-9      | X     |\n|---------------+-------|\n| ubuntu-14.04  | X     |\n|---------------+-------|\n| ubuntu-16.04  | X     |\n|---------------+-------|\n| openSUSE Leap | X     |\n|---------------+-------|\n```\n\n### Chef\n\n- Chef 12.7+\n\n### Cookbooks\n\n- 'build-essential' 5.0 or later - For compiling from source\n\n## Usage\n\nAdd `git::default`, `git::source` or `git::windows` to your run_list OR add `depends 'git', '~> 4.3'` to your cookbook's metadata.rb. include_recipe one of the recipes from your cookbook OR use the git_client resource directly, the same way you'd use core Chef resources (file, template, directory, package, etc).\n\n## Resources Overview\n\n- `git_client`: Manages a Git client installation on a machine. Acts as a singleton when using the (default) package provider. Source provider available as well.\n- `git_service`: Sets up a Git service via xinetd. WARNING: This is insecure and will probably be removed in the future\n- `git_config`: Sets up Git configuration on a node.\n\n### git_client\n\nThe `git_client` resource manages the installation of a Git client on a machine.\n\n`Note`: on macOS systems homebrew must first be installed on the system before running this resource. Prior to version 9.0 of this cookbook homebrew was automatically installed.\n\n#### Example\n\n```ruby\ngit_client 'default' do\n  action :install\nend\n```\n\n#### Example of source install\n\n```ruby\ngit_client 'source' do\n  provider Chef::Provider::GitClient::Source\n  source_version '2.14.2'\n  source_checksum 'a03a12331d4f9b0f71733db9f47e1232d4ddce00e7f2a6e20f6ec9a19ce5ff61'\n  action :install\nend\n```\n\n### git_config\n\nThe `git_config` resource manages the configuration of Git client on a machine.\n\n#### Example\n\n```ruby\ngit_config 'url.https://github.com/.insteadOf' do\n  value 'git://github.com/'\n  scope 'system'\n  options '--add'\nend\n```\n\n#### Properties\n\nCurrently, there are distinct sets of resource properties, used by the providers for source, package, macos, and windows.\n\n# used by linux package providers\n\n- `package_name` - Package name to install on Linux machines. Defaults to a calculated value based on platform.\n- `package_version` - Defaults to nil.\n- `package_action` - Defaults to `:install`\n\n# used by source providers\n\n- `source_prefix` - Defaults to '/usr/local'\n- `source_url` - Defaults to a calculated URL based on source_version\n- `source_version` - Defaults to 2.8.1\n- `source_use_pcre` - configure option for build. Defaults to false\n- `source_checksum` - Defaults to a known value for the 2.8.1 source tarball\n\n# used by the Windows package providers\n\n- `windows_display_name` - Windows display name\n- `windows_package_url` - Defaults to the Internet\n- `windows_package_checksum` - Defaults to the value for 2.8.1\n\n## Recipes\n\nThis cookbook ships with ready to use, attribute driven recipes that utilize the `git_client` and `git_service` resources. As of cookbook 4.x, they utilize the same attributes layout scheme from the 3.x. Due to some overlap, it is currently impossible to simultaneously install the Git client as a package and from source by using the \"manipulate a the node attributes and run a recipe\" technique. If you need both, you'll need to utilize the git_client resource in a recipe.\n\n## Attributes\n\n### Windows\n\n- `node['git']['version']` - git version to install\n- `node['git']['url']` - URL to git package\n- `node['git']['checksum']` - package SHA256 checksum\n- `node['git']['display_name']` - `windows_package` resource Display Name (makes the package install idempotent)\n\n### Linux\n\n- `node['git']['prefix']` - git install directory\n- `node['git']['version']` - git version to install\n- `node['git']['url']` - URL to git tarball\n- `node['git']['checksum']` - tarball SHA256 checksum\n- `node['git']['use_pcre']` - if true, builds git with PCRE enabled\n\n## Maintainers\n\nThis cookbook is maintained by Chef's Community Cookbook Engineering team. Our goal is to improve cookbook quality and to aid the community in contributing to cookbooks. To learn more about our team, process, and design goals see our [team documentation](https://github.com/chef-cookbooks/community_cookbook_documentation/blob/master/COOKBOOK_TEAM.MD). To learn more about contributing to cookbooks like this see our [contributing documentation](https://github.com/chef-cookbooks/community_cookbook_documentation/blob/master/CONTRIBUTING.MD), or if you have general questions about this cookbook come chat with us in #cookbok-engineering on the [Chef Community Slack](http://community-slack.chef.io/)\n\n## License\n\n**Copyright:** 2009-2017, Chef Software, Inc.\n\n```\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n```\n",
+    "maintainer": "Chef Software, Inc.",
+    "maintainer_email": "cookbooks@chef.io",
+    "license": "Apache-2.0",
+    "platforms": {
+      "amazon": ">= 0.0.0",
+      "centos": ">= 0.0.0",
+      "debian": ">= 0.0.0",
+      "fedora": ">= 0.0.0",
+      "freebsd": ">= 0.0.0",
+      "mac_os_x": ">= 0.0.0",
+      "omnios": ">= 0.0.0",
+      "oracle": ">= 0.0.0",
+      "redhat": ">= 0.0.0",
+      "smartos": ">= 0.0.0",
+      "scientific": ">= 0.0.0",
+      "suse": ">= 0.0.0",
+      "opensuse": ">= 0.0.0",
+      "opensuseleap": ">= 0.0.0",
+      "ubuntu": ">= 0.0.0",
+      "windows": ">= 0.0.0"
+    },
+    "dependencies": {
+      "build-essential": ">= 5.0.0"
+    },
+    "providing": {
+      "git": ">= 0.0.0",
+      "git::package": ">= 0.0.0",
+      "git::server": ">= 0.0.0",
+      "git::source": ">= 0.0.0",
+      "git::windows": ">= 0.0.0"
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+      "git": "Installs git",
+      "git::server": "Sets up a a git daemon",
+      "git::source": "Installs git from source",
+      "git::package": "",
+      "git::windows": ""
+    },
+    "version": "9.0.1",
+    "source_url": "https://github.com/chef-cookbooks/git",
+    "issues_url": "https://github.com/chef-cookbooks/git/issues",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "9.0.1",
+  "name": "git-9.0.1",
+  "cookbook_name": "git",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}

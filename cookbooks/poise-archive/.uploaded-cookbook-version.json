@@ -1,0 +1,178 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/metadata.json",
+      "path": "metadata.json",
+      "checksum": "c3324644e01567b90cad9199b081c6a7",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/default.rb",
+      "path": "libraries/default.rb",
+      "checksum": "6725fbc8037d61d3e2a36717920b93e2",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "f92429271bd18e297c94d7462e798314",
+      "specificity": "default"
+    },
+    {
+      "name": "attributes/default.rb",
+      "path": "attributes/default.rb",
+      "checksum": "5faa01a14c28f0e2c9c438fec95d59d9",
+      "specificity": "default"
+    },
+    {
+      "name": "files/base.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers/base.rb",
+      "checksum": "0d06bbd4a61b0519e7dd65cc67388565",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/gnu_tar.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers/gnu_tar.rb",
+      "checksum": "65ea439fb47e63585c83245349a399c6",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/seven_zip.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers/seven_zip.rb",
+      "checksum": "b61fd5f7a65ae8387fa644e68ff50dd0",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/tar.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers/tar.rb",
+      "checksum": "3c79ce7856f1bfe2e7a70d47719ea62e",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/zip.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers/zip.rb",
+      "checksum": "f7d72515eb5531a7c86c9b5db1b68e3f",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/archive_providers.rb",
+      "path": "files/halite_gem/poise_archive/archive_providers.rb",
+      "checksum": "f7e1eb5bf441feaf113c93640152838e",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/LICENSE",
+      "path": "files/halite_gem/poise_archive/bzip2/LICENSE",
+      "checksum": "897188e66426ebbfe9e32a3b0aae4139",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/constants.rb",
+      "path": "files/halite_gem/poise_archive/bzip2/constants.rb",
+      "checksum": "66b1ef6f56a4a806be4e94c2449d5ca7",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/crc.rb",
+      "path": "files/halite_gem/poise_archive/bzip2/crc.rb",
+      "checksum": "ad93664bff4e9509209672d66157c52a",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/decompressor.rb",
+      "path": "files/halite_gem/poise_archive/bzip2/decompressor.rb",
+      "checksum": "cbebb756c13f503c3866db831885024b",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/input_data.rb",
+      "path": "files/halite_gem/poise_archive/bzip2/input_data.rb",
+      "checksum": "e4af072e96a22187b7261cf15a0dae8c",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/output_data.rb",
+      "path": "files/halite_gem/poise_archive/bzip2/output_data.rb",
+      "checksum": "52bdb60c5113f79095ff82c113dea7be",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/bzip2.rb",
+      "path": "files/halite_gem/poise_archive/bzip2.rb",
+      "checksum": "8e278924e75db8e522342764538e77ce",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/cheftie.rb",
+      "path": "files/halite_gem/poise_archive/cheftie.rb",
+      "checksum": "18ee3432c0d86c6c9e8cb53293a088f7",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/poise_archive.rb",
+      "path": "files/halite_gem/poise_archive/resources/poise_archive.rb",
+      "checksum": "ce238856008656008cffd618fab11949",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/resources.rb",
+      "path": "files/halite_gem/poise_archive/resources.rb",
+      "checksum": "da7e570b0e5c2191093fca7a080c80d8",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/version.rb",
+      "path": "files/halite_gem/poise_archive/version.rb",
+      "checksum": "88e97a4e348e84a529661d6f3a17d557",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/poise_archive.rb",
+      "path": "files/halite_gem/poise_archive.rb",
+      "checksum": "309b4cc4fb303ac9602a527757d6d177",
+      "specificity": "halite_gem"
+    }
+  ],
+  "metadata": {
+    "name": "poise-archive",
+    "description": "A Chef cookbook for unpacking file archives like tar and zip.",
+    "long_description": "# Poise-Archive Cookbook\n\n[![Build Status](https://img.shields.io/travis/poise/poise-archive.svg)](https://travis-ci.org/poise/poise-archive)\n[![Gem Version](https://img.shields.io/gem/v/poise-archive.svg)](https://rubygems.org/gems/poise-archive)\n[![Cookbook Version](https://img.shields.io/cookbook/v/poise-archive.svg)](https://supermarket.chef.io/cookbooks/poise-archive)\n[![Coverage](https://img.shields.io/codecov/c/github/poise/poise-archive.svg)](https://codecov.io/github/poise/poise-archive)\n[![Gemnasium](https://img.shields.io/gemnasium/poise/poise-archive.svg)](https://gemnasium.com/poise/poise-archive)\n[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)\n\nA [Chef](https://www.chef.io/) cookbook to unpack file archives.\n\nIt supports `.tar`, `.tar.gz`, `.tar.bz2`, and `.zip` archive files.\n\n## Quick Start\n\nTo download an unpack and archive:\n\n```ruby\npoise_archive 'https://example.com/myapp.tgz' do\n  destination '/opt/myapp'\nend\n```\n\n## Requirements\n\nChef 12.1 or newer is required.\n\n## Platforms\n\nThis cookbook supports all platforms (including Windows) but some Unix platforms\n(Solaris, AIX) may see very slow tar file unpacking when using the pure-Ruby fallback\nimplementation.\n\n## Resources\n\n### `poise_archive`\n\nThe `poise_archive` resource unpacks file archives.\n\n```ruby\npoise_archive '/tmp/myapp-1.2.0.tar' do\n  destination '/srv/myapp-1.2.0'\nend\n```\n\nA URL can also be passed as the source path, optionally with extra properties to\nbe merged with `source_properties`.\n\n```ruby\npoise_archive 'http://example.com/myapp-1.2.0.zip' do\n  destination '/srv/myapp-1.2.0'\nend\n\npoise_archive ['http://example.com/myapp-1.2.0.zip', {headers: {'Authentication' => '...'}}] do\n  destination '/srv/myapp-1.2.0'\nend\n```\n\n#### Actions\n\n* `:unpack` – Unpack the archive. *(default)*\n\n#### Properties\n\n* `path` – Path to the archive. If relative, it is taken as a file inside\n  `Chef::Config[:file_cache_path]`. If a URL, it is downloaded to a cache file\n  first. *(name attribute)*\n* `destination` – Path to unpack the archive to. If not specified, the path of\n  the archive without the file extension is used. Required when unpacking from\n  a URL. *(default: auto)*\n* `group` – Group to run the unpack as.\n* `keep_existing` – Keep existing files in the destination directory when\n  unpacking. *(default: false)*\n* `source_properties` – Property key/value pairs to be applied to the\n  `remote_file` file resource when downloading a URL. *(default: {retries: 5})*\n* `strip_components` – Number of intermediary directories to skip when\n  unpacking. Works like GNU tar's `--strip-components`. *(default: 1)*\n* `user` – User to run the unpack as.\n\n## Sponsors\n\nDevelopment sponsored by [Bloomberg](http://www.bloomberg.com/company/technology/).\n\nThe Poise test server infrastructure is sponsored by [Rackspace](https://rackspace.com/).\n\n## License\n\nCopyright 2016-2017, Noah Kantrowitz\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\nBZip2 implementation is based on RBzip2. Copyright Sebastian Staudt, Brian Lopez.\nRBzip2 code used under the terms of the new BSD license.\n",
+    "maintainer": "Noah Kantrowitz",
+    "maintainer_email": "noah@coderanger.net",
+    "license": "Apache 2.0",
+    "platforms": {
+
+    },
+    "dependencies": {
+      "poise": "~> 2.6"
+    },
+    "providing": {
+
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+
+    },
+    "version": "1.5.0",
+    "source_url": "https://github.com/poise/poise-archive",
+    "issues_url": "https://github.com/poise/poise-archive/issues",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "1.5.0",
+  "name": "poise-archive-1.5.0",
+  "cookbook_name": "poise-archive",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}

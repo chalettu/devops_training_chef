@@ -1,0 +1,145 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/metadata.json",
+      "path": "metadata.json",
+      "checksum": "a955464f0e28105daf050efa70fc12f2",
+      "specificity": "default"
+    },
+    {
+      "name": "libraries/default.rb",
+      "path": "libraries/default.rb",
+      "checksum": "1f528d4ad945ab6d2ef654b3739a83ae",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "338279e97c686d308f166dfb24bfc67a",
+      "specificity": "default"
+    },
+    {
+      "name": "files/app_mixin.rb",
+      "path": "files/halite_gem/poise_application_javascript/app_mixin.rb",
+      "checksum": "8167bb05d2112fe51a0163d6e3e95ea2",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/cheftie.rb",
+      "path": "files/halite_gem/poise_application_javascript/cheftie.rb",
+      "checksum": "837a87f296fb0c9996f715383e7542b7",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/error.rb",
+      "path": "files/halite_gem/poise_application_javascript/error.rb",
+      "checksum": "7be0e311d4b57a436f6bcf2dce72e551",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/javascript.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/javascript.rb",
+      "checksum": "e726be5609d9bd78ec112c13682dff0e",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/javascript_execute.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/javascript_execute.rb",
+      "checksum": "346ddcba7fb89a0e22b8e0ffc69b73cf",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/javascript_service.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/javascript_service.rb",
+      "checksum": "ffda2c2be3cec5b0f184a0c35c098368",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/node_package.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/node_package.rb",
+      "checksum": "a2f4cd812883a8ac5f542c9511e7f2c5",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/npm_install.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/npm_install.rb",
+      "checksum": "d18d010164342e3885cab7cfe17ac54e",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/npm_start.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources/npm_start.rb",
+      "checksum": "60c1b9b4cbd2d8433eaa984efa3875ba",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/resources.rb",
+      "path": "files/halite_gem/poise_application_javascript/resources.rb",
+      "checksum": "4921090cb3b883b15a35386371d7655a",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/service_mixin.rb",
+      "path": "files/halite_gem/poise_application_javascript/service_mixin.rb",
+      "checksum": "0d12556d7841edbafd1d9e029e3b3932",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/version.rb",
+      "path": "files/halite_gem/poise_application_javascript/version.rb",
+      "checksum": "4fd1be3ca68da3d79d4d7c56b887e74c",
+      "specificity": "halite_gem"
+    },
+    {
+      "name": "files/poise_application_javascript.rb",
+      "path": "files/halite_gem/poise_application_javascript.rb",
+      "checksum": "66adc34cd3c3abe3057a5cf175a14a8b",
+      "specificity": "halite_gem"
+    }
+  ],
+  "metadata": {
+    "name": "application_javascript",
+    "description": "A Chef cookbook for deploying server-side JavaScript application code.",
+    "long_description": "# Application_Javascript Cookbook\n\n[![Build Status](https://img.shields.io/travis/poise/application_javascript.svg)](https://travis-ci.org/poise/application_javascript)\n[![Gem Version](https://img.shields.io/gem/v/poise-application-javascript.svg)](https://rubygems.org/gems/poise-application-javascript)\n[![Cookbook Version](https://img.shields.io/cookbook/v/application_javascript.svg)](https://supermarket.chef.io/cookbooks/application_javascript)\n[![Coverage](https://img.shields.io/codecov/c/github/poise/application_javascript.svg)](https://codecov.io/github/poise/application_javascript)\n[![Gemnasium](https://img.shields.io/gemnasium/poise/application_javascript.svg)](https://gemnasium.com/poise/application_javascript)\n[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)\n\nA [Chef](https://www.chef.io/) cookbook to deploy server-side JavaScript\napplications using Node.js or io.js.\n\n## Quick Start\n\nTo deploy an Express application from git:\n\n```ruby\napplication '/srv/myapp' do\n  git 'https://github.com/example/myapp.git'\n  npm_install\n  npm_start\nend\n```\n\n## Requirements\n\nChef 12 or newer is required.\n\n## Resources\n\n### `application_javascript`\n\nThe `application_javascript` resource installs a JavaScript runtime for the\ndeployment.\n\n```ruby\napplication '/srv/myapp' do\n  javascript '3'\nend\n```\n\nAll actions and properties are the same as the [`javascript_runtime` resource](https://github.com/poise/poise-javascript#javascript_runtime).\n\n### `application_javascript_service`\n\nThe `application_javascript_javascript_service` resource creates a service for a\nJavaScript command.\n\n```ruby\napplication '/srv/myapp' do\n  javascript_service 'main.js'\nend\n```\n\n#### Actions\n\n* `:enable` – Create, enable and start the service. *(default)*\n* `:disable` – Stop, disable, and destroy the service.\n* `:start` – Start the service.\n* `:stop` – Stop the service.\n* `:restart` – Stop and then start the service.\n* `:reload` – Send the configured reload signal to the service.\n\n#### Properties\n\n* `command` – Command to run. *(name attribute)*\n* `path` – Base path for the application. *(default: application path)*\n* `service_name` – Name of the service to create. *(default: auto-detect)*\n# `user` – User to run the service as. *(default: application owner)*\n\n### `application_node_package`\n\nThe `application_node_package` resource installs NPM packages for the deployment.\n\n```ruby\napplication '/srv/myapp' do\n  node_package 'grunt-cli'\nend\n```\n\nAll actions and properties are the same as the [`node_package` resource](https://github.com/poise/poise-javascript#node_package),\nexcept that the `group` and `user` properties default to the application-level\ndata if not specified.\n\n### `application_npm_start`\n\nThe `application_npm_start` resource creates a service for a JavaScript\napplication using `npm start`.\n\n```ruby\napplication '/srv/myapp' do\n  npm_start\nend\n```\n\n#### Actions\n\n* `:enable` – Create, enable and start the service. *(default)*\n* `:disable` – Stop, disable, and destroy the service.\n* `:start` – Start the service.\n* `:stop` – Stop the service.\n* `:restart` – Stop and then start the service.\n* `:reload` – Send the configured reload signal to the service.\n\n#### Properties\n\n* `path` – Base path for the application. *(default: name attribute)*\n* `command` – NPM subcommand to run. *(default: start)*\n* `service_name` – Name of the service to create. *(default: auto-detect)*\n# `user` – User to run the service as. *(default: application owner)*\n\n## Sponsors\n\nDevelopment sponsored by [Chef Software](https://www.chef.io/), [Symonds & Son](http://symondsandson.com/), and [Orion](https://www.orionlabs.co/).\n\nThe Poise test server infrastructure is sponsored by [Rackspace](https://rackspace.com/).\n\n## License\n\nCopyright 2015, Noah Kantrowitz\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+    "maintainer": "YOUR_COMPANY_NAME",
+    "maintainer_email": "YOUR_EMAIL",
+    "license": "none",
+    "platforms": {
+
+    },
+    "dependencies": {
+      "poise": "~> 2.0",
+      "application": "~> 5.0",
+      "poise-javascript": "~> 1.0",
+      "poise-service": "~> 1.0"
+    },
+    "providing": {
+
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+
+    },
+    "version": "1.0.0",
+    "source_url": "",
+    "issues_url": "",
+    "privacy": false,
+    "chef_versions": [
+
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "1.0.0",
+  "name": "application_javascript-1.0.0",
+  "cookbook_name": "application_javascript",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}

@@ -1,0 +1,81 @@
+{
+  "all_files": [
+    {
+      "name": "root_files/LICENSE",
+      "path": "LICENSE",
+      "checksum": "0c21163b20ec1cb25b825a9744b95eb6",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/README.md",
+      "path": "README.md",
+      "checksum": "9131fbe1ccc9fc741ed13c1022da9842",
+      "specificity": "default"
+    },
+    {
+      "name": "recipes/default.rb",
+      "path": "recipes/default.rb",
+      "checksum": "1c7e89256ee151d51813c0ae7e7b1ac4",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/metadata.rb",
+      "path": "metadata.rb",
+      "checksum": "e60abed39c5fe81e2b4e80fefb3137c7",
+      "specificity": "default"
+    },
+    {
+      "name": "root_files/chefignore",
+      "path": "chefignore",
+      "checksum": "8218f5e138ec098a9ec618082f05a9b8",
+      "specificity": "default"
+    }
+  ],
+  "metadata": {
+    "name": "nodeapp",
+    "description": "Installs/Configures nodeapp",
+    "long_description": "Installs/Configures nodeapp",
+    "maintainer": "The Authors",
+    "maintainer_email": "you@example.com",
+    "license": "All Rights Reserved",
+    "platforms": {
+
+    },
+    "dependencies": {
+      "nodejs": ">= 0.0.0",
+      "application": ">= 0.0.0",
+      "application_javascript": ">= 0.0.0",
+      "application_git": ">= 0.0.0"
+    },
+    "providing": {
+      "nodeapp": ">= 0.0.0"
+    },
+    "attributes": {
+
+    },
+    "recipes": {
+      "nodeapp": ""
+    },
+    "version": "0.1.0",
+    "source_url": "",
+    "issues_url": "",
+    "privacy": false,
+    "chef_versions": [
+      [
+        ">= 12.14"
+      ]
+    ],
+    "ohai_versions": [
+
+    ],
+    "gems": [
+
+    ]
+  },
+  "version": "0.1.0",
+  "name": "nodeapp-0.1.0",
+  "cookbook_name": "nodeapp",
+  "frozen?": false,
+  "chef_type": "cookbook_version",
+  "json_class": "Chef::CookbookVersion"
+}
